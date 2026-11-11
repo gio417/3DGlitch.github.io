@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.menu {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #00d4ff;
+    font-size: 28px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #00d4ff;
+}
+
+.banner {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.contenido-banner {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.contenido-banner h1 {
+    font-size: 60px;
+    color: #00d4ff;
+    margin-bottom: 15px;
+}
+
+.contenido-banner .eslogan {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+}
+
+.contenido-banner p {
+    font-size: 18px;
+}
+
+.seccion {
+    padding: 60px 80px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.seccion h2 {
+    color: #00d4ff;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.seccion h3 {
+    color: #00d4ff;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.seccion p {
+    font-size: 18px;
+}
+
+.mision-vision {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.bloque-mv {
+    flex: 1;
+    min-width: 280px;
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #00d4ff;
+}
+
+.servicios {
+    background-color: #1b1b1b;
+    max-width: 100%;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.tarjeta {
+    background-color: #222;
+    width: 280px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #00d4ff;
+}
+
+.tarjeta h3 {
+    color: #00d4ff;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.galeria-servicios {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.galeria-servicios img {
+    width: 240px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #00d4ff;
+}
+
+.contenedor-formulario {
+    max-width: 550px;
+    margin: 30px auto;
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #00d4ff;
+    text-align: left;
+}
+
+.formulario-contacto label {
+    display: block;
+    margin-bottom: 8px;
+    color: #00d4ff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.formulario-contacto input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.formulario-contacto input:focus {
+    border-color: #00d4ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 212, 255, 0.4);
+}
+
+.btn-enviar {
+    background-color: #00d4ff;
+    color: #000000;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #0099bb;
+    transform: translateY(-2px);
+}
+
+.telefono-contacto {
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.telefono-contacto a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.telefono-contacto a:hover {
+    color: #ffffff;
+}
+
+.pie-pagina {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #00d4ff;
+    margin-top: 40px;
+}
+
+.pie-pagina p {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+}
